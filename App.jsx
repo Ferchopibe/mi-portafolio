@@ -550,9 +550,9 @@ export default function Portfolio() {
 
           {/* Social Links */}
           <div className="flex items-center space-x-4">
-            {/* Facebook (Enlace directo optimizado a la biografía) */}
+            {/* Facebook */}
             <a 
-              href="https://facebook.com/profile.php?id=100008323282245" 
+              href="https://www.facebook.com/luisfernando.orozcobenjumea.7" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="Facebook"
