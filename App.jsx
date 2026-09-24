@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import {
   Code2,
@@ -17,7 +16,10 @@ import {
   Globe,
   Award,
   Clock,
-  Users
+  Users,
+  Facebook,
+  Instagram,
+  Twitter
 } from 'lucide-react';
 
 export default function Portfolio() {
@@ -536,7 +538,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="relative z-10 border-t border-slate-800/80 bg-slate-950 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-slate-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-slate-500">
           <div className="flex items-center space-x-3">
             <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 p-0.5">
               <div className="w-full h-full bg-slate-950 rounded-[6px] flex items-center justify-center">
@@ -544,6 +546,53 @@ export default function Portfolio() {
               </div>
             </div>
             <span>© {new Date().getFullYear()} Luis Fernando Orozco. Todos los derechos reservados.</span>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex items-center space-x-4">
+            {/* Facebook (Enlace directo optimizado a la biografía) */}
+            <a 
+              href="https://facebook.com/profile.php?id=100008323282245" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/50 transition-colors"
+            >
+              <Facebook className="w-4 h-4" />
+            </a>
+
+            {/* TikTok */}
+            <a 
+              href="https://www.tiktok.com/@luisfernandoorozc593" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/50 transition-colors flex items-center justify-center font-bold text-xs font-mono w-8 h-8"
+            >
+              🎵
+            </a>
+
+            {/* Instagram */}
+            <a 
+              href="https://www.instagram.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/50 transition-colors"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
+
+            {/* X / Twitter */}
+            <a 
+              href="https://x.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="X"
+              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/50 transition-colors"
+            >
+              <Twitter className="w-4 h-4" />
+            </a>
           </div>
 
           <div className="flex space-x-6 font-mono text-slate-400">
